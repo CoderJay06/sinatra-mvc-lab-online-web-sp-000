@@ -23,12 +23,12 @@ class PigLatinizer
       if first_letter.match(/[aeoui]/)
          "#{word}way"
       else
-        new_word = word.slice(2..word.length) + first_letter + word.slice(1, 1) + "ay"
+        piglatinize_consonant_word
       end 
    end 
 
    def piglatinize_consonant_word 
-
+      new_word = word.slice(2..word.length) + first_letter + word.slice(1, 1) + "ay"
    end
 
 end 
